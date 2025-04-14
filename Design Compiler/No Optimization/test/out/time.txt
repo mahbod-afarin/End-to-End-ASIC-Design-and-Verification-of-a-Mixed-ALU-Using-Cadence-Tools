@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Comlex_ALU
+Version: C-2009.06-SP5
+Date   : Tue Jan 31 11:48:43 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: valid_reg (rising edge-triggered flip-flop)
+  Endpoint: valid (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  valid_reg/CK (DFFHQX1)                   0.00       0.00 r
+  valid_reg/Q (DFFHQX1)                    0.19       0.19 r
+  valid (out)                              0.00       0.19 r
+  data arrival time                                   0.19
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

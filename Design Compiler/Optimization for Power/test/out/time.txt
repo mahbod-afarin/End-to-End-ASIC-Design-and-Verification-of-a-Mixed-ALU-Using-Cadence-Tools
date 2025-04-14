@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Comlex_ALU
+Version: C-2009.06-SP5
+Date   : Tue Jan 31 13:44:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: error_reg (rising edge-triggered flip-flop)
+  Endpoint: error (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  error_reg/CK (EDFFXL)                    0.00       0.00 r
+  error_reg/Q (EDFFXL)                     0.24       0.24 r
+  error (out)                              0.00       0.24 r
+  data arrival time                                   0.24
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

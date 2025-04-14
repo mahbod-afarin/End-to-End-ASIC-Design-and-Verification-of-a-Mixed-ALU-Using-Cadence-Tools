@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : Comlex_ALU
+Version: C-2009.06-SP5
+Date   : Tue Jan 31 13:08:14 2017
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/icic/Desktop/test/library/osu/typical.db)
+
+Number of ports:               88
+Number of nets:               505
+Number of cells:              469
+Number of references:          27
+
+Combinational area:       66015.735331
+Noncombinational area:    9204.148960
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          75219.884291
+Total area:                 undefined
+1
