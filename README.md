@@ -16,7 +16,7 @@
 4. Analyze the impact of **optimization constraints** like speed and area.
 5. Use **Modelsim** to simulate the synthesized netlist with the SDF file:
    - Explain the source of delays introduced by the SDF.
-6. Compare post-synthesis simulation results with RTL simulation from Assignment 1 to confirm correctness.
+6. Compare post-synthesis simulation results with RTL simulation from [IP Core Project](https://github.com/mahbod-afarin/RTL-Design-Using-IP-Cores) to confirm correctness.
 
 ---
 
