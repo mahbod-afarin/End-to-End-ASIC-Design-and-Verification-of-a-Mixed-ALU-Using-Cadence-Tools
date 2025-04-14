@@ -1,5 +1,6 @@
 # End-to-End-ASIC-Design-and-Verification-of-a-Mixed-ALU-Using-Cadence-Tools
 
+Project Report ([link](https://github.com/mahbod-afarin/End-to-End-ASIC-Design-and-Verification-of-a-Mixed-ALU-Using-Cadence-Tools/blob/main/Report.pdf))
 ## 🧾 Steps
 
 ### Part 1: Synthesis & Post-Synthesis Simulation
