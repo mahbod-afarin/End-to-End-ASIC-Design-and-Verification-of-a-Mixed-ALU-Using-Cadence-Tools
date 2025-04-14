@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: /home/icic/Desktop/encounter/Comlex_ALU_imported.enc                     
+#                                              #
+################################################
+restoreDesign /home/icic/Desktop/encounter/Comlex_ALU_imported.enc.dat Comlex_ALU

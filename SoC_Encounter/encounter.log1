@@ -1,0 +1,178 @@
+Checking out Encounter license ...
+SOC_Encounter_GXL 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p032.
+sourcing /opt/Cadence/SOC8.1USR3/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2008.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.10-p009
+--- Starting "First Encounter v08.10-p004_1" on Wed Feb  1 11:50:42 2017 (mem=62.3M) ---
+--- Running on ICICVM.lab.edu (i686 w/Linux 2.6.9-78.EL) ---
+This version was compiled on Tue Nov 4 14:34:21 PST 2008.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD_INTERNAL> setUIVar rda_Input ui_timingcon_file Comlex_ALU.sdc
+<CMD_INTERNAL> setUIVar rda_Input ui_leffile lib/demo25.lef
+<CMD_INTERNAL> setUIVar rda_Input ui_timelib lib/demo25.tlf
+<CMD_INTERNAL> setUIVar rda_Input ui_netlist Comlex_ALU_netlist.v
+<CMD_INTERNAL> setUIVar rda_Input ui_topcell Comlex_ALU
+<CMD> commitConfig
+
+Loading Lef file lib/demo25.lef...
+Set DBUPerIGU to M2 pitch 900.
+Initializing default via types and wire widths ...
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically illegal.
+Refer the LEF/DEF 5.5 and earlier Language Referece manual on how to define this statement. See file lib/demo25.lef at line 69984.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically illegal.
+Refer the LEF/DEF 5.5 and earlier Language Referece manual on how to define this statement. See file lib/demo25.lef at line 69984.
+**ERROR: (SOCLF-81):	No MANUFACTURINGGRID value was given. It is set to
+minimum LEF unit of 0.001 um. If this value is not right, a MANUFACTURINGGRID
+statement must be added in the technology lef file.
+
+Power Planner/ViaGen version 8.1.45 promoted on 09/01/2008.
+viaInitial starts at Wed Feb  1 12:03:31 2017
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM1 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM2 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM3 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM4 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM5 GENERATE
+**WARN: (SOCPP-549):	VIARULE 'via1Array' SPACING (center-2-center) 0.720 is smaller than cut layer 'VIA12' SAMENET SPACING (edge-2-edge) 0.350.
+**WARN: (SOCPP-549):	VIARULE 'via2Array' SPACING (center-2-center) 0.720 is smaller than cut layer 'VIA23' SAMENET SPACING (edge-2-edge) 0.350.
+**WARN: (SOCPP-549):	VIARULE 'via3Array' SPACING (center-2-center) 0.720 is smaller than cut layer 'VIA34' SAMENET SPACING (edge-2-edge) 0.350.
+**WARN: (SOCPP-549):	VIARULE 'via4Array' SPACING (center-2-center) 0.720 is smaller than cut layer 'VIA45' SAMENET SPACING (edge-2-edge) 0.350.
+viaInitial ends at Wed Feb  1 12:03:31 2017
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'Comlex_ALU_netlist.v'
+Inserting temporary buffers to remove assignment statements.
+
+*** Memory Usage v0.144 (Current mem = 200.766M, initial mem = 62.277M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=200.8M) ***
+Set top cell to Comlex_ALU.
+Reading common timing library 'lib/demo25.tlf' ...
+**WARN: (TECHLIB-399):	No lower measured slew threshold for rising transition specified, assuming default value of  40%
+**WARN: (TECHLIB-399):	No upper measured slew threshold for rising transition specified, assuming default value of  60%
+**WARN: (TECHLIB-399):	No lower measured slew threshold for falling transition specified, assuming default value of  40%
+**WARN: (TECHLIB-399):	No upper measured slew threshold for falling transition specified, assuming default value of  60%
+**WARN: (TECHLIB-359):	Line 147997, Missing 'Input( )' expression for LATCH( )
+**WARN: (TECHLIB-359):	Line 148437, Missing 'Input( )' expression for LATCH( )
+**WARN: (TECHLIB-359):	Line 148877, Missing 'Input( )' expression for LATCH( )
+**WARN: (TECHLIB-359):	Line 149317, Missing 'Input( )' expression for LATCH( )
+**WARN: (TECHLIB-359):	Line 149757, Missing 'Input( )' expression for LATCH( )
+**WARN: (TECHLIB-359):	Line 150197, Missing 'Input( )' expression for LATCH( )
+**WARN: (TECHLIB-359):	Line 150637, Missing 'Input( )' expression for LATCH( )
+**WARN: (TECHLIB-359):	Line 151077, Missing 'Input( )' expression for LATCH( )
+ read 440 cells in library 'typical' 
+*** End library_loading (cpu=0.02min, mem=7.1M, fe_cpu=0.35min, fe_mem=207.8M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell Comlex_ALU ...
+*** Netlist is unique.
+** info: there are 484 modules.
+** info: there are 2986 stdCell insts.
+
+*** Memory Usage v0.144 (Current mem = 209.117M, initial mem = 62.277M) ***
+CTE reading timing constraint file 'Comlex_ALU.sdc' ...
+INFO (CTE): constraints read successfully
+WARNING (CTE-25): Line: 8 of File Comlex_ALU.sdc : Skipped unsupported command: set_units
+
+
+*** Read timing constraints (cpu=0:00:00.1 mem=210.3M) ***
+*info - Done with setDoAssign with 237 assigns removed and 0 assigns could not be removed.
+Total number of combinational cells: 238
+Total number of sequential cells: 184
+Total number of tristate cells: 18
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX1 BUFX12 BUFX16 BUFX20 BUFX2 BUFX4 BUFX3 BUFX8 CLKBUFX1 BUFXL CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX2 CLKBUFX3 CLKBUFXL CLKBUFX4 CLKBUFX8
+Total number of usable buffers: 18
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX2 CLKINVX4 CLKINVX3 CLKINVX8 INVX1 CLKINVXL INVX12 INVX16 INVX20 INVXL INVX2 INVX3 INVX4 INVX8
+Total number of usable inverters: 18
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY2X1 DLY4X1 DLY3X1
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Horizontal Layer M1 offset = 400 (guessed)
+Vertical Layer M2 offset = 450 (derived)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+**WARN: (SOCDC-1159):	Invalid input transition time. The default 0.1ps input transition time will be used.
+Set Input Pin Transition Delay as 0.1 ps.
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> selectObject Module {complex_mul_gen[2].mc}
+<CMD> deselectAll
+<CMD> selectObject Module {complex_mul_gen[0].mc}
+<CMD> deselectAll
+<CMD> selectObject Module {complex_mul_gen[2].mc}
+<CMD> deselectAll
+<CMD> selectObject Module {complex_mul_gen[0].mc}
+<CMD> deselectAll
+<CMD> selectObject Module {complex_mul_gen[2].mc}
+<CMD> windowSelect 330.868 246.349 395.681 174.273
+<CMD> windowSelect -199.367 387.708 -107.735 289.371
+<CMD> selectObject Module {complex_mul_gen[0].mc}
+<CMD> deselectAll
+<CMD> selectObject Module {complex_mul_gen[2].mc}
+<CMD> windowSelect -123.938 279.873 -128.967 278.197
+<CMD> selectObject Module {complex_mul_gen[2].mc}
+<CMD> deselectAll
+<CMD> selectObject Module {complex_mul_gen[0].mc}
+<CMD> deselectAll
+<CMD> selectObject Module {complex_mul_gen[2].mc}
+<CMD> deselectAll
+<CMD> selectObject Module {complex_mul_gen[2].mc}
+<CMD> deselectAll
+<CMD> selectObject Module {complex_mul_gen[0].mc}
+<CMD> getIoFlowFlag
+
+*** Memory Usage v0.144 (Current mem = 211.883M, initial mem = 62.277M) ***
+--- Ending "First Encounter" (totcpu=0:00:30.7, real=0:18:23, mem=211.9M) ---

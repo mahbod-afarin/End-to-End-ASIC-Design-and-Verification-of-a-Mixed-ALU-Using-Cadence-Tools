@@ -1,0 +1,187 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Wed Feb  1 12:27:04 2017                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: First Encounter v08.10-p004_1 (32bit) 11/04/2008 14:34 (Linux 2.6)
+#@(#)CDS: NanoRoute v08.10-p008 NR081027-0018/USR58-UB (database version 2.30, 67.1.1) {superthreading v1.11}
+#@(#)CDS: CeltIC v08.10-p002_1 (32bit) 10/23/2008 22:04:14 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CTE v08.10-p016_1 (32bit) Oct 26 2008 15:11:51 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CPE v08.10-p009
+
+getenv ENCOUNTER_CONFIG_RELATIVE_CWD
+setDoAssign
+getIoFlowFlag
+setUIVar rda_Input ui_gndnet VSS
+setUIVar rda_Input ui_timingcon_file Comlex_ALU.sdc
+setUIVar rda_Input ui_leffile lib/demo25.lef
+setUIVar rda_Input ui_timelib lib/demo25.tlf
+setUIVar rda_Input ui_netlist Comlex_ALU_netlist.v
+setUIVar rda_Input ui_topcell Comlex_ALU
+setUIVar rda_Input ui_pwrnet VDD
+commitConfig
+fit
+setDrawView fplan
+selectObject Module {complex_mul_gen[0].mc}
+windowSelect -23.926 170.362 -28.395 169.803
+selectObject Module {complex_mul_gen[0].mc}
+saveDesign /home/icic/Desktop/encounter/Comlex_ALU_imported.enc
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VDD -type net -net VDD
+globalNetConnect VDD -type tiehi -pin VDD -inst *
+globalNetConnect VSS -type tielo -pin VSS -inst *
+globalNetConnect VSS -type net -net VSS
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VDD -type net -net VDD
+globalNetConnect VDD -type tiehi -pin VDD -inst *
+globalNetConnect VSS -type tielo -pin VSS -inst *
+globalNetConnect VSS -type net -net VSS
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VDD -type net -net VDD
+globalNetConnect VDD -type tiehi -pin VDD -inst *
+globalNetConnect VSS -type tielo -pin VSS -inst *
+globalNetConnect VSS -type net -net VSS
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VDD -type net -net VDD
+globalNetConnect VDD -type tiehi -pin VDD -inst *
+globalNetConnect VSS -type tielo -pin VSS -inst *
+globalNetConnect VSS -type net -net VSS
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VDD -type net -net VDD
+globalNetConnect VDD -type tiehi -pin VDD -inst *
+globalNetConnect VSS -type tielo -pin VSS -inst *
+globalNetConnect VSS -type net -net VSS
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VDD -type net -net VDD
+globalNetConnect VDD -type tiehi -pin VDD -inst *
+globalNetConnect VSS -type tielo -pin VSS -inst *
+globalNetConnect VSS -type net -net VSS
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site demo1site -r 0.998081811518 0.701033 10 10 10 10
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site demo1site -r 0.971200475044 0.701334 10.8 10.4 10.0 10.0
+uiSetTool select
+getIoFlowFlag
+fit
+deselectAll
+selectObject Module {complex_mul_gen[2].mc}
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site demo1site -r 0.943658062726 0.701919 15 15 15 15
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site demo1site -r 0.916872114729 0.702787 15.3 15.2 15.0 15.0
+uiSetTool select
+getIoFlowFlag
+fit
+addRing -spacing_bottom 0.4 -width_left 5 -width_bottom 5 -width_top 5 -spacing_top 0.4 -layer_bottom METAL3 -center 1 -stacked_via_top_layer METAL5 -width_right 5 -around core -jog_distance 0.8 -offset_bottom 0.8 -layer_top METAL3 -threshold 0.8 -offset_left 0.8 -spacing_right 0.4 -spacing_left 0.4 -offset_right 0.8 -offset_top 0.8 -layer_right METAL4 -nets {VSS VDD } -stacked_via_bottom_layer METAL1 -layer_left METAL4
+zoomBox 276.793 -13.034 301.629 -30.533
+zoomOut
+zoomOut
+zoomOut
+zoomOut
+zoomOut
+windowSelect -43.191 476.666 543.077 -31.042
+zoomIn
+deselectAll
+zoomOut
+windowSelect -49.055 487.219 552.456 -36.905
+zoomIn
+zoomOut
+deselectAll
+zoomSelected
+zoomSelected
+windowSelect -38.502 481.357 554.802 -40.423
+zoomSelected
+zoomIn
+zoomIn
+zoomOut
+deselectAll
+windowSelect 892.902 182.130 751.921 208.180
+addStripe -block_ring_top_layer_limit METAL4 -max_same_layer_jog_length 0.84 -padcore_ring_bottom_layer_limit METAL2 -set_to_set_distance 100 -stacked_via_top_layer METAL5 -padcore_ring_top_layer_limit METAL4 -spacing 0.4 -merge_stripes_value 0.8 -direction horizontal -layer METAL3 -block_ring_bottom_layer_limit METAL2 -width 0.42 -nets {VSS VDD } -stacked_via_bottom_layer METAL1
+addStripe -block_ring_top_layer_limit METAL5 -max_same_layer_jog_length 0.84 -padcore_ring_bottom_layer_limit METAL3 -set_to_set_distance 100 -stacked_via_top_layer METAL5 -padcore_ring_top_layer_limit METAL5 -spacing 0.4 -merge_stripes_value 0.8 -layer METAL4 -block_ring_bottom_layer_limit METAL3 -width 0.42 -nets {VSS VDD } -stacked_via_bottom_layer METAL1
+placeDesign -prePlaceOpt
+displaySpareCell
+setDrawView place
+findCoreFillerCells -tiehilo
+addTieHiLo -cell {TIEHI TIELO} -prefix LTIE
+addCTSCellList {BUFX2 CLKBUFX1 CLKINVX1 INVX1}
+clockDesign -genSpecOnly Clock.ctstch
+clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+clearClockDisplay
+clearClockDisplay
+getOpCond -min
+getOpCond -max
+setOpCond -maxLibrary typical -max typical -minLibrary typical -min typical
+zoomBox 223.243 287.099 230.905 287.865
+fit
+getOpCond -min
+getOpCond -max
+setOpCond -maxLibrary typical -max typical -minLibrary typical -min typical
+isExtractRCModeDefault
+setExtractRCMode -engine detail -specialNet true -coupled true -relative_c_th 0.03 -total_c_th 5.0 -rcdb Comlex_ALU.rcdb
+isExtractRCModeSignoff
+isExtractRCModeSignoff
+rcOut -spef Comlex_ALU.spef
+clearClockDomains
+setClockDomains -all
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix Comlex_ALU_postCTS -outDir timingReports
+optDesign -postCTS
+clearClockDomains
+setClockDomains -all
+timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix Comlex_ALU_postCTS -outDir timingReports
+sroute -connect { corePin floatingStripe } -layerChangeRange { 1 5 } -blockPinTarget { nearestTarget } -checkAlignedSecondaryPin 1 -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 5 -crossoverViaTopLayer 5 -targetViaBottomLayer 1 -nets { VSS VDD }
+trialRoute -maxRouteLayer 5 -floorplanMode
+setDrawView place
+setNanoRouteMode -quiet -routeInsertAntennaDiode true
+setNanoRouteMode -quiet -routeAntennaCellName ANTENNATF
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+clearClockDomains
+setClockDomains -all
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix Comlex_ALU_postRoute -outDir timingReports
+editSplit
+clearClockDomains
+setClockDomains -all
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix Comlex_ALU_postRoute -outDir timingReports
+getFillerMode -quiet
+findCoreFillerCells
+addFiller -cell FILL64 FILL32 FILL16 FILL8 FILL4 FILL2 FILL1 -prefix FILLER -markFixed
+verifyGeometry
+violationBrowser -all -no_display_false
+verifyConnectivity -type all -error 1000 -warning 50
+deleteMetalFill -shapes { FILLWIRE FILLWIREOPC } -mode all
+addMetalFill -layer { 1 2 3 4 5 } -nets { VSS VDD }
+verifyGeometry
+saveNetlist Comlex_ALU.v
+uiSetTool stretchWire
+streamOut GDS2.gds -mapFile streamOut.map -libName DesignLib -structureName Comlex_ALU -stripes 1 -outputMacros -units 1000 -mode ALL
+editSplit
+editSplit
+editSplit
